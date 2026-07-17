@@ -22,6 +22,9 @@ class SmartTv extends Tv {
     public void brows() {
         System.out.println("SmartTV is browsing");
     }
+     public void abc() {
+        System.out.println("ABC method from SmartTV");
+    }
 
 }
 
@@ -30,6 +33,10 @@ public class MethodOverriding1 {
         Tv t = new SmartTv();
         t.swithcON();
         t.chageChannel();
+        // SmartTv st = (SmartTv) t;
+        // st.abc();  
+        
+    
     }
 
 }

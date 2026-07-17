@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class OutputStreamDemo1 {
     public static void main(String[] args) throws IOException {
-        String data = "i am from mp";
+        String data = " my name is ujjwal";
         FileOutputStream fos = new FileOutputStream(
                 "C:\\Users\\udhake\\Desktop\\java\\FileHandling\\FileOutputStreamdemo2.txt", true);
         // FileOutputStream fos = new FileOutputStream(
