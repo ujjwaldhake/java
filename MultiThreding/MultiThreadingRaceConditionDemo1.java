@@ -6,6 +6,9 @@ class BankAccount {
     void withdraw(int amount) {
         if (balance >= amount) {
             System.out.println("is withdrawing ");
+            balance = balance - amount;
+            System.out.println(balance);
+
         } else {
             System.out.println("insufficient balance ");
         }
@@ -26,7 +29,7 @@ class Consumer extends Thread {
     }
 }
 
-public class MultiThreadingSyncDemo1 {
+public class MultiThreadingRaceConditionDemo1 {
     public static void main(String[] args) {
         BankAccount b = new BankAccount();
         Consumer c1 = new Consumer(b);
