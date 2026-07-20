@@ -1,0 +1,61 @@
+java.io
+│
+├── File Handling
+│   ├── File
+│   ├── RandomAccessFile
+│   ├── FileDescriptor
+│   └── FilePermission
+│
+├── Byte Streams
+│   ├── InputStream (Abstract)
+│   │     ├── FileInputStream
+│   │     ├── ByteArrayInputStream
+│   │     ├── BufferedInputStream
+│   │     ├── DataInputStream
+│   │     ├── ObjectInputStream
+│   │     ├── SequenceInputStream
+│   │     └── PipedInputStream
+│   │
+│   └── OutputStream (Abstract)
+│         ├── FileOutputStream
+│         ├── ByteArrayOutputStream
+│         ├── BufferedOutputStream
+│         ├── DataOutputStream
+│         ├── ObjectOutputStream
+│         ├── PrintStream
+│         └── PipedOutputStream
+│
+├── Character Streams
+│   ├── Reader (Abstract)
+│   │     ├── BufferedReader
+│   │     ├── InputStreamReader
+│   │     │      └── FileReader
+│   │     ├── CharArrayReader
+│   │     ├── StringReader
+│   │     └── PipedReader
+│   │
+│   └── Writer (Abstract)
+│         ├── BufferedWriter
+│         ├── OutputStreamWriter
+│         │      └── FileWriter
+│         ├── CharArrayWriter
+│         ├── StringWriter
+│         ├── PrintWriter
+│         └── PipedWriter
+│
+├── Bridge Classes
+│   ├── InputStreamReader
+│   │      (InputStream → Reader)
+│   └── OutputStreamWriter
+│          (OutputStream → Writer)
+│
+└── Utility Interfaces
+    ├── Serializable
+    ├── Externalizable
+    ├── Closeable
+    ├── Flushable
+    ├── ObjectInput
+    ├── ObjectOutput
+    ├── DataInput
+    ├── DataOutput
+    └── FilenameFilter
