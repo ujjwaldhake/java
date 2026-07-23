@@ -25,7 +25,7 @@ class Child extends Parent {
 
 public class StaticExample {
     public static void main(String[] args) {
-        System.out.println(Child.x);
+        Parent p = new System.out.println(Child.x);
         Child.show();
         Parent.Inner pi = new Parent.Inner();
         Child.Inner obj = new Child.Inner();
