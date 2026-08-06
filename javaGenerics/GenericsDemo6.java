@@ -26,3 +26,9 @@ public class GenericsDemo6 {
         System.out.println(pair.getValue());
     }
 }
+// naming convention
+// T:Type
+// E:Element:used in collection
+// K:Key:used in map
+// V:Value:used in map
+// N:Number
