@@ -216,6 +216,7 @@ public class ArrayListDemo1 {
         list7.add("B");
         list7.add("D");
         list7.remove("A");
+        list7.toArray();
 
     }
 }
