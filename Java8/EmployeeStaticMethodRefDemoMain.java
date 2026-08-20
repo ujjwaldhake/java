@@ -1,5 +1,7 @@
 package Java8;
 
+import java.util.Arrays;
+
 @FunctionalInterface
 interface EmployeeValidation {
     // taking in EMp Details and checking id name : true or false
@@ -59,6 +61,13 @@ class EmployeeStaticMethodRefDemo {
         return false;
 
     }
+
+    boolean validateEmployeeDetails2(EmployeeStaticMethodRefDemo employee) {
+        if (employee.getId() != 0 && employee.getName() != null)
+            return true;
+        return false;
+
+    }
 }
 
 public class EmployeeStaticMethodRefDemoMain {
@@ -69,6 +78,12 @@ public class EmployeeStaticMethodRefDemoMain {
         EmployeeValidation validEmployee = EmployeeStaticMethodRefDemo::validateEmployeeDetails;
         System.out.println(validEmployee.isValidEmployee(emp));
         System.out.println(validEmployee.isValidEmployee(emp2));
-
+        // reference for non satatic method / instance method
+        EmployeeStaticMethodRefDemo emp3 = new EmployeeStaticMethodRefDemo(103, "Ujjwal2", "M", 100500);
+        EmployeeValidation emp4II = emp3::validateEmployeeDetails2;
+        System.out.println(emp4II.isValidEmployee(emp3));
+        // access instance method with class nemr also
+        String[] value = { "Ujjwal", "Tejas", "aaksh", "MOdi", "Rahul", "Virat" };
+        Arrays.sort(value);
     }
 }
